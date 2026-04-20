@@ -9,10 +9,10 @@ a{color:inherit}
 .container{max-width:1080px;margin:0 auto;padding:0 18px}
 .site-header{position:sticky;top:0;z-index:40;background:rgba(255,250,244,.82);backdrop-filter:blur(12px);border-bottom:1px solid #efe1d6}
 .site-header .container{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:68px}
-.logo{display:inline-flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;color:#18253d;letter-spacing:-.02em}
+.logo{display:inline-flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;color:#18253d;letter-spacing:-.02em;flex:0 0 auto}
 .logo:before{content:"✦";display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#7ee7b7,#60a5fa);color:#0f172a;font-size:13px;box-shadow:0 6px 14px rgba(96,165,250,.25)}
-.top-nav{display:flex;gap:8px;overflow:auto;padding:8px 0;scrollbar-width:none}
-.top-nav::-webkit-scrollbar{display:none}
+.top-nav{flex:1 1 auto;overflow:hidden;min-width:0}
+.nav-track{display:flex;align-items:center;gap:8px;width:max-content}
 .top-nav a{white-space:nowrap;text-decoration:none;color:#4b5563;font-size:14px;padding:9px 13px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid #ebdfd5;box-shadow:0 3px 10px rgba(236,165,112,.08)}
 .top-nav a:hover{color:#111827;border-color:#d9c3b3}
 .hero{padding:26px 0 18px}
@@ -73,6 +73,7 @@ h3{font-size:20px;line-height:1.15;color:#13213a;margin:0 0 10px}
 .cards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .site-footer{margin-top:26px;border-top:1px solid #efe1d6;background:rgba(255,250,244,.68)}
 .site-footer .container{padding-top:18px;padding-bottom:28px;font-size:14px;color:#6b7280}
+@keyframes navLoop{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 4px))}}
 @media (max-width:920px){
   .hero-shell,.info-grid{grid-template-columns:1fr}
   .route-grid,.cards-grid{grid-template-columns:1fr}
@@ -83,7 +84,8 @@ h3{font-size:20px;line-height:1.15;color:#13213a;margin:0 0 10px}
   .hero{padding:16px 0 14px}
   .hero-shell,.prose,.page-card,.info-card,.route-card{padding:18px;border-radius:22px}
   .lead{font-size:16px}
-  .top-nav{width:100%;padding-top:0}
+  .top-nav{width:100%;padding-top:2px;mask-image:linear-gradient(to right,transparent 0,#000 6%,#000 94%,transparent 100%)}
+  .nav-track{padding-right:8px;animation:navLoop 18s linear infinite}
   .top-nav a{font-size:13px;padding:8px 11px}
   .hero-actions{flex-direction:column;align-items:stretch}
   .action{width:100%}
