@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bullinkln.github.io/kz-microloans/</loc>
-  </url>
-  <url>
-    <loc>https://bullinkln.github.io/kz-microloans/na-kartu/</loc>
-  </url>
-  <url>
-    <loc>https://bullinkln.github.io/kz-microloans/do-zarplaty/</loc>
-  </url>
-  <url>
-    <loc>https://bullinkln.github.io/kz-microloans/pervyi-zaym/</loc>
-  </url>
-  <url>
-    <loc>https://bullinkln.github.io/kz-microloans/bez-podpisok/</loc>
-  </url>
-  <url>
-    <loc>https://bullinkln.github.io/kz-microloans/bez-spravki-o-dohodah/</loc>
-  </url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/na-kartu/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/do-zarplaty/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/pervyi-zaym/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/bez-podpisok/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/bez-spravki-o-dohodah/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/bez-otkaza/</loc></url>
+  <url><loc>https://bullinkln.github.io/kz-microloans/novye-mfo/</loc></url>
 </urlset>
