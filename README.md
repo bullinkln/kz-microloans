@@ -1,5 +1,7 @@
 # kz-microloans
 
-Технический репозиторий GitHub Pages для витрины по микрозаймам в Казахстане.
+👉 Живая витрина: **https://bullinkln.github.io/kz-microloans/**
 
-SEO-хаб с длинным README и удобной навигацией находится здесь: **https://github.com/bullinkln/kz-microloans-guide**
+Этот репозиторий хранит исходники GitHub Pages-сайта.
+
+SEO-хаб с длинным README находится здесь: **https://github.com/bullinkln/kz-microloans-guide**
