@@ -17,7 +17,9 @@ a{color:inherit}
 .lang-link{display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:8px 10px;border-radius:999px;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:rgba(255,255,255,.86);border:1px solid #ead9ca;color:#5c6678;box-shadow:0 3px 10px rgba(236,165,112,.06);transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
 .lang-link:hover{transform:translateY(-1px)}
 .lang-link.active{background:linear-gradient(135deg,#ff7eb3,#ff9f68);border-color:transparent;color:#fff;box-shadow:0 10px 22px rgba(255,126,179,.2)}
-.top-nav{flex:1 1 auto;overflow:hidden;min-width:0;padding:3px 0;mask-image:linear-gradient(to right,transparent 0,#000 4%,#000 96%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 4%,#000 96%,transparent 100%)}
+.top-nav{flex:1 1 auto;overflow:hidden;min-width:0;padding:3px 0;mask-image:linear-gradient(to right,transparent 0,#000 4%,#000 96%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 4%,#000 96%,transparent 100%);touch-action:pan-y;cursor:grab}
+.top-nav.is-dragging{cursor:grabbing;user-select:none;-webkit-user-select:none}
+.top-nav.is-dragging .nav-track{animation:none!important;transition:none!important}
 .nav-track{display:flex;align-items:center;gap:8px;width:max-content;animation:navLoop 18s linear infinite;will-change:transform}
 .top-nav a{white-space:nowrap;text-decoration:none;font-size:14px;padding:9px 13px;border-radius:999px;flex:0 0 auto;background:rgba(255,255,255,.8);border:1px solid #ebdfd5;box-shadow:0 3px 10px rgba(236,165,112,.06);color:#4b5563;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
 .top-nav a:hover{transform:translateY(-1px);filter:saturate(1.03)}
