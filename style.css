@@ -87,13 +87,13 @@ h3{font-size:20px;line-height:1.15;color:#13213a;margin:0 0 10px}
 .site-footer .container{padding-top:18px;padding-bottom:28px;font-size:14px;color:#6b7280}
 @keyframes navLoop{from{transform:translate3d(0,0,0)}to{transform:translate3d(calc(-50% - 4px),0,0)}}
 @media (min-width:641px){
-  .site-header .container{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;column-gap:14px;min-height:auto;padding-top:10px;padding-bottom:10px}
-  .header-stack{display:contents}
-  .header-top{display:contents}
-  .logo{grid-column:1}
-  .top-nav{grid-column:2;align-self:center;margin-left:8px;padding:5px 0;min-width:0}
+  .site-header .container{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px}
+  .header-stack{display:flex;flex-direction:row;align-items:center;gap:14px;flex:1 1 auto;min-width:0}
+  .header-top{display:flex;align-items:center;gap:14px;flex:1 1 auto;min-width:0}
+  .logo{flex:0 0 auto}
+  .top-nav{flex:1 1 auto;min-width:0;padding:5px 0}
   .top-nav:hover .nav-track{animation-play-state:paused}
-  .lang-switch{grid-column:3;justify-self:start;margin-left:6px}
+  .lang-switch{flex:0 0 auto}
 }
 @media (max-width:920px){
   .hero-shell,.info-grid{grid-template-columns:1fr}
